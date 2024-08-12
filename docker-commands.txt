@@ -1,0 +1,24 @@
+docker build -t sampleapnewp:1.0 .
+docker images
+docker run -d -p 9001:80 --name test-cont sampleapnewp:1.0
+docker ps
+docker login
+docker tag sampleapnewp:2.0  a1hnrzk1/sampleapnewp:2.0
+docker push a1hnrzk1/sampleapnewp:2.0
+docker pull a1hnrzk1/sampleapnewp
+
+
+Kubernates
+
+kubectl get pods
+kubectl run nginx-sample-pod --image=nginx --restart=Never --port 80 -n default
+
+kubectl expose pod nginx-sample-pod --type=NodePort --port 80 --name=nginx-sample-service
+
+kubectl get svc
+
+kubectl get services nginx-sample-service
+minikube service nginx-sample-service
+minikube service nginx-sample-service --url
+
+
