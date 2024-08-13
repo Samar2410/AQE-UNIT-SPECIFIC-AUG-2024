@@ -1,0 +1,3 @@
+Selenium Practice Form: https://www.selenium.dev/selenium/web/formPage.html
+Sample Login Page: https://www.techlistic.com/p/selenium-practice-form.html
+Simple Form Example: https://www.seleniumeasy.com/test/basic-first-form-demo.html
